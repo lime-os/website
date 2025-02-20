@@ -38,12 +38,15 @@ header {
 }
 
 .hero-title {
-  font-weight: 400;
   font-size: 20px;
   text-align: center;
 }
 
-.hero-title span {
+.hero-title p:nth-child(1) {
+  font-weight: 400;
+}
+
+.hero-title p:nth-child(2) {
   font-weight: 600;
 }
 
