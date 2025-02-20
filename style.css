@@ -88,7 +88,7 @@ header {
 
 .card-title {
   text-align: center;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 20px;
   color: #000000;
   padding-bottom: 0.25rem;
@@ -97,7 +97,7 @@ header {
 .card-subtitle {
   display: flex;
   gap: 0.5rem;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 14px;
   color: #000000;
 }
