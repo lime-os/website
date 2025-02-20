@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/inter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -45,9 +50,11 @@ header {
 .hero-image {
   box-shadow: inset 0px 0px 2px 0px #00000040;
   border-radius: 5px;
+  height: 170px;
+  width: 291px;
 }
 
-.downloadBtn {
+.download-button {
   border: 1px solid #636363;
   background-color: #282828;
   font-weight: 500;
@@ -60,7 +67,7 @@ header {
   border-radius: 5px;
 }
 
-.downloadBtn span {
+.download-button span {
   text-shadow: 0px 1px 0px #000000;
 }
 
