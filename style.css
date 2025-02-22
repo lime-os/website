@@ -28,6 +28,10 @@ header {
   align-items: center;
 }
 
+.navigation {
+  display: none;
+}
+
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -47,14 +51,16 @@ header {
 }
 
 .hero-title p:nth-child(2) {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .hero-image {
   box-shadow: inset 0px 0px 2px 0px #00000040;
   border-radius: 5px;
-  height: 170px;
-  width: 291px;
+  width: 75vw;
+  min-width: 50%;
+  max-width: 41.5rem;
+  height: auto;
 }
 
 .download-button {
@@ -76,17 +82,18 @@ header {
 
 .cards-section {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 3rem;
   padding: 1.5rem 3rem;
   justify-content: center;
-  align-items: center;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  max-width: 20vw;
+  min-width: 18.25rem;
 }
 
 .card-title {
@@ -121,4 +128,36 @@ header {
 
 .card-text-list span {
   font-weight: 500;
+}
+
+@media (max-width: 392px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 728px) {
+  .card-title {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1068px) {
+  header {
+    padding: 1.5rem 18%;
+  }
+  header div:nth-child(2) {
+    display: none;
+  }
+  .navigation {
+    display: block;
+  }
+  .navigation ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+  }
 }
