@@ -28,7 +28,8 @@ header {
   align-items: center;
 }
 
-.navigation {
+.navigation,
+.navigation ul {
   display: none;
 }
 
