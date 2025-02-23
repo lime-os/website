@@ -103,15 +103,8 @@ header {
   cursor: pointer;
 }
 
-.download-button img {
-  width: 9px;
-  height: 12px;
-  display: block;
-}
-
 .download-button span {
   text-shadow: 0px 1px 0px #000000;
-  display: inline-block;
 }
 
 .cards-section {
