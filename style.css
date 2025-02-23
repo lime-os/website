@@ -86,7 +86,6 @@ header {
 .download-button {
   display: flex;
   gap: 0.5rem;
-  justify-content: center;
   align-items: center;
 
   padding: 0.5rem 2rem;
@@ -107,6 +106,7 @@ header {
 .download-button img {
   width: 9px;
   height: 12px;
+  display: block;
 }
 
 .download-button span {
