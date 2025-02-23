@@ -72,12 +72,17 @@ header {
 
 .hero-image {
   width: 100%;
-  object-fit: contain;
-  height: min-content;
+  overflow: hidden;
 
   border-radius: 5px;
   box-shadow: inset 0px 0px 2px 0px #00000040;
 }
+
+.hero-image > img {
+  display: block;
+  width: 100%;
+}
+
 
 .download-button {
   display: flex;
