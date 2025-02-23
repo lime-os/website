@@ -111,6 +111,7 @@ header {
 
 .download-button span {
   text-shadow: 0px 1px 0px #000000;
+  display: inline-block;
 }
 
 .cards-section {
