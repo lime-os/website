@@ -73,6 +73,7 @@ header {
 .hero-image {
   width: 100%;
   object-fit: contain;
+  height: fit-content;
 
   border-radius: 5px;
   box-shadow: inset 0px 0px 2px 0px #00000040;
