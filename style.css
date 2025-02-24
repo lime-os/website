@@ -248,6 +248,10 @@ header {
     padding: var(--hero-vertical-padding) var(--hero-horizontal-padding);
   }
 
+  .hero-image {
+    width: 70%;
+  }
+
   .cards-section {
     justify-content: space-between;
 
