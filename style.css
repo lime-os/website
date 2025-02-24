@@ -76,6 +76,7 @@ header {
 
 .hero-image {
   width: 100%;
+  height: auto;
   overflow: hidden;
 
   border-radius: 5px;
@@ -221,11 +222,11 @@ header {
 
   .hero-image {
     width: 80%;
+    border-radius: 8px;
   }
 
   .cards-section {
     justify-content: center;
-
     padding: var(--cards-vertical-padding) var(--cards-horizontal-padding);
   }
 
@@ -258,7 +259,6 @@ header {
 
   .cards-section {
     justify-content: space-between;
-
     padding: var(--cards-vertical-padding) var(--cards-horizontal-padding);
   }
 
