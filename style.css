@@ -206,10 +206,13 @@ header {
     gap: 1rem;
     list-style: none;
 
-    font-weight: bold;
     font-size: 0.875rem;
 
     color: #000000;
+  }
+
+  .navigation li {
+    cursor: pointer;
   }
 
   .hero-section {
