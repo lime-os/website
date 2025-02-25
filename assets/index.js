@@ -1,16 +1,17 @@
-let div = document.createElement("div");
-div.style.width = "100%";
-div.style.height = "100%";
-div.style.background = "white";
-div.style.position = "absolute";
+let overlayElement = document.createElement("div");
+overlayElement.style.width = "100%";
+overlayElement.style.height = "100%";
+overlayElement.style.background = "white";
+overlayElement.style.position = "absolute";
+overlayElement.style.top = 0;
 
-document.getElementById("overlay").appendChild(div);
+document.body.style.position = "relative";
+document.body.appendChild(overlayElement);
 
 let clickCount = 0;
-
-div.addEventListener("click", function () {
+overlayElement.addEventListener("click", function () {
   clickCount++;
   if (clickCount === 5) {
-    div.remove();
+    overlayElement.remove();
   }
 });
