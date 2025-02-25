@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LimeOS</title>
     <link rel="icon" type="image/svg+xml" href="/assets/images/icon.svg" />
-    <link rel="stylesheet" href="style.css" />
-    <script>
-      alert(
-        "This website is a work in progress. LimeOS is not ready for download yet."
-      );
-    </script>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="./assets/index.js" defer></script>
   </head>
   <body>
+    <div id="overlay"></div>
     <header>
       <div>
         <img src="assets/images/logo.svg" alt="LimeOS logo" />
@@ -22,7 +19,7 @@
       </div>
       <div class="navigation">
         <ul>
-          <li style="font-weight: bolder;">Home</li>
+          <li style="font-weight: bolder">Home</li>
           <li>Guides</li>
           <li>Extensions</li>
         </ul>
@@ -35,10 +32,7 @@
           <p>Minimalists</p>
         </div>
         <div class="hero-image">
-          <img
-            src="assets/images/desktop-preview.png"
-            alt="Desktop preview"
-          />
+          <img src="assets/images/desktop-preview.png" alt="Desktop preview" />
         </div>
         <div>
           <button class="download-button">
@@ -125,7 +119,7 @@
           </div>
           <div class="card-subtitle">
             <img
-              class="icon"  
+              class="icon"
               src="assets/images/audio-icon.svg"
               alt="Audio icon"
             />

@@ -23,6 +23,7 @@
 
 html {
   font-size: 16px;
+  position: relative; /* remove later */
 }
 
 body {
