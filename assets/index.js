@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   let overlayElement = document.createElement("div");
   overlayElement.style.width = "100%";
   overlayElement.style.height = "100%";
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.body.appendChild(overlayElement);
 
   let clickCount = 0;
-  overlayElement.addEventListener("click", function () {
+  overlayElement.addEventListener("click", () => {
     clickCount++;
     if (clickCount === 5) {
       overlayElement.remove();
