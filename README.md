@@ -4,15 +4,13 @@
   <img alt="LimeOS Banner">
 </picture>
 
-###
+######
 
-This website serves as the central hub for LimeOS, featuring an intuitive 
-landing page that introduces the platform’s clean, modern design. It offers 
-streamlined access to the latest downloads, a hand-picked selection of 
-extensions to personalize your experience, and comprehensive guides to help 
-you fully leverage LimeOS.
+This website serves as the primary resource for LimeOS, showcasing the 
+systems functionality and aesthetics, access to the latest downloads, a 
+curated selection of extensions and easy-to-follow guides to get you going.
 
-## License
+### License
 
 This project is licensed under the GPL-3.0 License. This license reflects our 
 commitment to ensuring that this software remains free and open-source. 
