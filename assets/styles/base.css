@@ -1,0 +1,87 @@
+:root {
+  --header-vertical-padding: 2rem;
+  --header-horizontal-padding: 2.5rem;
+
+  --hero-vertical-padding: 1.25rem;
+  --hero-horizontal-padding: 2.5rem;
+
+  --cards-vertical-padding: 3rem;
+  --cards-horizontal-padding: 2.5rem;
+}
+
+@font-face {
+  font-family: 'Albert Sans';
+  src: url('../fonts/albert-sans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 17px;
+}
+
+body {
+  height: 100%;
+
+  font-family: 'Albert Sans', sans-serif;
+  letter-spacing: 0.02em;
+
+  /* Create a subtle grid background using linear gradients */
+  background:
+  linear-gradient(0deg, transparent 29px, #f6f6f6 30px),
+  linear-gradient(270deg, transparent 29px, #f6f6f6 30px);
+  background-size: 30px 30px;
+}
+
+main {
+  margin-bottom: 2rem;
+}
+
+.icon {
+  height: 1em;
+}
+
+/* md: Medium screens (tablets, larger phones) */
+@media (min-width: 650px) {
+  html {
+    font-size: 16px;
+  }
+
+  :root {
+    --header-vertical-padding: 2rem;
+    --header-horizontal-padding: 5rem;
+
+    --hero-vertical-padding: 1.25rem;
+    --hero-horizontal-padding: 5rem;
+
+    --cards-vertical-padding: 3rem;
+    --cards-horizontal-padding: 5rem;
+  }
+}
+
+/* lg: Large screens (laptops, desktops) */
+@media (min-width: 850px) {
+  body, html {
+    height: 100dvh;
+  }
+
+  :root {
+    --section-width: clamp(770px, 55vw, 1024px);
+
+    --header-horizontal-padding: calc((100vw - var(--section-width)) / 2);
+    --hero-horizontal-padding: calc((100vw - var(--section-width)) / 2);
+    --cards-horizontal-padding: calc((100vw - var(--section-width)) / 2);
+  }
+}
+
+/* Tall screens (adjust font size for large heights) */
+@media (min-height: 1024px) {
+  html {
+    font-size: 18.5px;
+  }
+}

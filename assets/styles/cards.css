@@ -1,0 +1,92 @@
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+
+  padding: var(--cards-vertical-padding) var(--cards-horizontal-padding);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  width: 100%;
+}
+
+.card-title {
+  font-size: 1.15rem;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+
+  padding-bottom: 0.25rem;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.card-text {
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: #474747;
+
+  padding-bottom: 0.5rem;
+}
+
+.card-list {
+  list-style: none;
+
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: #474747;
+}
+
+.card-list span {
+  font-weight: 500;
+}
+
+/* md: Medium screens (tablets, larger phones) */
+@media (min-width: 650px) {
+  .cards-section {
+    justify-content: center;
+
+    padding: var(--cards-vertical-padding) var(--cards-horizontal-padding);
+  }
+
+  .card {
+    width: 45%;
+  }
+}
+
+/* lg: Large screens (laptops, desktops) */
+@media (min-width: 850px) {
+  .cards-section {
+    justify-content: space-between;
+
+    padding: var(--cards-vertical-padding) var(--cards-horizontal-padding);
+  }
+
+  .card {
+    /* Adjust width for 3 columns, accounting for 2 gaps */
+    width: calc((100% - 2 * 3rem) / 3);
+  }
+
+  .card-title {
+    text-align: left;
+  }
+}

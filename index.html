@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>LimeOS – Minimalist Linux Distribution</title>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LimeOS</title>
-    <link rel="icon" type="image/svg+xml" href="/assets/images/icon.svg" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <script src="./assets/index.js" defer></script>
+    <meta
+      name="description"
+      content="A fast, minimalist Linux distribution based on Debian. Designed for aesthetics, simplicity, and smooth performance on low-end hardware. Features a custom desktop environment."
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+
+    <link rel="stylesheet" href="/assets/styles/base.css" />
+    <link rel="stylesheet" href="/assets/styles/header.css" />
+    <link rel="stylesheet" href="/assets/styles/hero.css" />
+    <link rel="stylesheet" href="/assets/styles/cards.css" />
+
+    <script src="/assets/scripts/overlay.js" defer></script>
   </head>
+
   <body>
     <header>
-      <div>
-        <img src="assets/images/logo.svg" alt="LimeOS logo" />
+      <div class="logo-container">
+        <img src="assets/images/logo.svg" alt="LimeOS Logo" />
       </div>
-      <div>
-        <img src="assets/images/burger-menu.svg" alt="Burger menu icon" />
+      <div class="menu-icon-container">
+        <img src="assets/images/menu-icon.svg" alt="Menu Icon" />
       </div>
-      <div class="navigation">
+      <nav>
         <ul>
-          <li style="font-weight: bolder">Home</li>
+          <li class="selected">Home</li>
           <li>Guides</li>
-          <li>Extensions</li>
+          <li>Downloads</li>
         </ul>
-      </div>
+      </nav>
     </header>
     <main>
       <section class="hero-section">
@@ -30,66 +42,68 @@
           <p>The Linux Distribution for</p>
           <p>Minimalists</p>
         </div>
-        <div class="hero-image">
-          <img src="assets/images/desktop-preview.png" alt="Desktop preview" />
-        </div>
-        <div>
-          <button class="download-button">
-            <img
-              class="icon"
-              src="assets/images/download-icon.svg"
-              alt="Download icon"
-            />
-            <span>Download .iso</span>
-          </button>
+        <div class="hero-showcase">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="none"
+            loading="lazy"
+            poster="assets/images/hero-preview.png"
+          >
+            <source src="assets/videos/hero-showcase.webm" type="video/webm" />
+          </video>
         </div>
       </section>
       <section class="cards-section">
         <div class="card">
           <div class="card-title">
-            <p>What’s included?</p>
+            <p>What's included?</p>
           </div>
-          <div class="card-subtitle">
-            <img
-              class="icon"
-              src="assets/images/window-manager-icon.svg"
-              alt="Window Manager Icon"
-            />
-            <p>Window Manager</p>
-          </div>
-          <div>
-            <p class="card-text">
-              A custom X11 tiling/floating hybrid, it’s fast, elegant, and easy
-              to configure.
-            </p>
-          </div>
-          <div class="card-subtitle">
-            <img
-              class="icon"
-              src="assets/images/display-manager-icon.svg"
-              alt="Display manager icon"
-            />
-            <p>Display Manager</p>
-          </div>
-          <div>
-            <p class="card-text">
-              A custom lightweight and elegant display manager that matches the
-              design of our window manager.
-            </p>
-          </div>
-          <div class="card-subtitle">
-            <img
-              class="icon"
-              src="assets/images/debian-icon.svg"
-              alt="Debian icon"
-            />
-            <p>Debian Distribution</p>
-          </div>
-          <div>
-            <p class="card-text">
-              A stripped down version of the Debian Linux Distribution, ensuring
-              stability and security.
-            </p>
+          <div class="card-content">
+            <div class="card-subtitle">
+              <img
+                class="icon"
+                src="assets/images/window-icon.svg"
+                alt="Window Icon"
+              />
+              <p>Window Manager</p>
+            </div>
+            <div>
+              <p class="card-text">
+                A custom X11 tiling/floating hybrid, it's fast, elegant, and
+                easy to configure.
+              </p>
+            </div>
+            <div class="card-subtitle">
+              <img
+                class="icon"
+                src="assets/images/authentication-icon.svg"
+                alt="Authentication Icon"
+              />
+              <p>Display Manager</p>
+            </div>
+            <div>
+              <p class="card-text">
+                A custom lightweight and elegant display manager that matches
+                the design of our window manager.
+              </p>
+            </div>
+            <div class="card-subtitle">
+              <img
+                class="icon"
+                src="assets/images/based-icon.svg"
+                alt="Based Icon"
+              />
+              <p>Debian Distribution</p>
+            </div>
+            <div>
+              <p class="card-text">
+                A stripped down version of the Debian Linux Distribution,
+                ensuring stability and security.
+              </p>
+            </div>
           </div>
         </div>
         <div class="card">
@@ -102,33 +116,35 @@
               extensions.
             </p>
           </div>
-          <div class="card-subtitle">
-            <img
-              class="icon"
-              src="assets/images/network-manager-icon.svg"
-              alt="Network manager icon"
-            />
-            <p>Network Manager</p>
-          </div>
-          <div>
-            <p class="card-text">
-              Quo voluptatum sunt ut debitis consequuntur exercitationem.
-              Eligendi est placeat nisi et corrupti aut enim.
-            </p>
-          </div>
-          <div class="card-subtitle">
-            <img
-              class="icon"
-              src="assets/images/audio-icon.svg"
-              alt="Audio icon"
-            />
-            <p>Audio Manager</p>
-          </div>
-          <div>
-            <p class="card-text">
-              Quo voluptatum sunt ut debitis consequuntur exercitationem.
-              Eligendi est placeat nisi et corrupti aut enim.
-            </p>
+          <div class="card-content">
+            <div class="card-subtitle">
+              <img
+                class="icon"
+                src="assets/images/network-icon.svg"
+                alt="Network Icon"
+              />
+              <p>Network Manager</p>
+            </div>
+            <div>
+              <p class="card-text">
+                Easily manage your network connections through an intuitive
+                graphical interface, accessible directly from the top bar.
+              </p>
+            </div>
+            <div class="card-subtitle">
+              <img
+                class="icon"
+                src="assets/images/audio-icon.svg"
+                alt="Audio Icon"
+              />
+              <p>Audio Manager</p>
+            </div>
+            <div>
+              <p class="card-text">
+                Control your system's audio levels and devices with a simple
+                mixer panel, conveniently integrated into the top bar.
+              </p>
+            </div>
           </div>
         </div>
         <div class="card">
@@ -141,35 +157,37 @@
               high-end hardware.
             </p>
           </div>
-          <div class="card-subtitle">
-            <img
-              class="icon"
-              src="assets/images/min-requirements-icon.svg"
-              alt="Chip icon"
-            />
-            <p>Minimum Requirements</p>
-          </div>
-          <div>
-            <ul class="card-text-list">
-              <li><span>Processor</span>: 1 GHz, single-core</li>
-              <li><span>Memory</span>: 1 Gigabyte</li>
-              <li><span>Storage Space</span>: 3 Gigabytes</li>
-            </ul>
-          </div>
-          <div class="card-subtitle">
-            <img
-              class="icon"
-              src="assets/images/min-requirements-icon.svg"
-              alt="Chip icon"
-            />
-            <p>Recommended Requirements</p>
-          </div>
-          <div>
-            <ul class="card-text-list">
-              <li><span>Processor</span>: 1.5 GHz, dual-core</li>
-              <li><span>Memory</span>: 2 Gigabytes</li>
-              <li><span>Storage Space</span>: 6 Gigabytes</li>
-            </ul>
+          <div class="card-content">
+            <div class="card-subtitle">
+              <img
+                class="icon"
+                src="assets/images/hardware-icon.svg"
+                alt="Hardware Icon"
+              />
+              <p>Minimum Requirements</p>
+            </div>
+            <div>
+              <ul class="card-list">
+                <li><span>Processor</span>: 1 GHz, single-core</li>
+                <li><span>Memory</span>: 1 Gigabyte</li>
+                <li><span>Storage Space</span>: 3 Gigabytes</li>
+              </ul>
+            </div>
+            <div class="card-subtitle">
+              <img
+                class="icon"
+                src="assets/images/hardware-icon.svg"
+                alt="Hardware Icon"
+              />
+              <p>Recommended Requirements</p>
+            </div>
+            <div>
+              <ul class="card-list">
+                <li><span>Processor</span>: 1.5 GHz, dual-core</li>
+                <li><span>Memory</span>: 2 Gigabytes</li>
+                <li><span>Storage Space</span>: 6 Gigabytes</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

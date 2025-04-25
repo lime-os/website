@@ -1,0 +1,64 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  padding: var(--hero-vertical-padding) var(--hero-horizontal-padding);
+}
+
+.hero-title {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.hero-title p:nth-child(1) {
+  font-weight: 400;
+}
+
+.hero-title p:nth-child(2) {
+  font-weight: bold;
+}
+
+.hero-showcase {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 2px 0px #00000040;
+}
+
+.hero-showcase > video {
+  display: block;
+  width: 100%;
+}
+
+/* md: Medium screens (tablets, larger phones) */
+@media (min-width: 650px) {
+  .hero-section {
+    padding: var(--hero-vertical-padding) var(--hero-horizontal-padding);
+  }
+
+  .hero-title {
+    font-size: 1.4rem;
+  }
+
+  .hero-showcase { 
+    width: 80%;
+
+    border-radius: 8px;
+  }
+}
+
+/* lg: Large screens (laptops, desktops) */
+@media (min-width: 850px) {
+  .hero-section {
+    padding: var(--hero-vertical-padding) var(--hero-horizontal-padding);
+  }
+
+  .hero-showcase { 
+    width: 65%;
+  }
+}

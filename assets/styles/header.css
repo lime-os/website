@@ -1,0 +1,68 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: var(--header-vertical-padding) var(--header-horizontal-padding);
+}
+
+header .logo-container > img {
+  height: 1.5rem;
+}
+
+header .menu-icon-container > img {
+  height: 1rem;
+
+  cursor: pointer;
+}
+
+header nav,
+nav ul {
+  display: none;
+}
+
+nav li {
+  font-weight: bold;
+}
+
+nav li.selected {
+  /* Use text-shadow for a subtle bold effect as font-weight is not effective enough */
+  text-shadow: 0.1px 0.1px #000, -0.1px -0.1px #000, 0.1px -0.1px #000, -0.1px 0.1px #000;
+  letter-spacing: 0.03rem;
+}
+
+/* md: Medium screens (tablets, larger phones) */
+@media (min-width: 650px) {
+  header {
+    padding: var(--header-vertical-padding) var(--header-horizontal-padding);
+  }
+
+  header .menu-icon-container {
+    display: none;
+  }
+
+  header nav {
+    display: block;
+  }
+
+  header nav ul {
+    display: flex;
+    gap: 1rem;
+
+    list-style: none;
+
+    font-size: 0.845rem;
+    color: #000000;
+  }
+
+  header nav li {
+    cursor: pointer;
+  }
+}
+
+/* lg: Large screens (laptops, desktops) */
+@media (min-width: 850px) {
+  header {
+    padding: var(--header-vertical-padding) var(--header-horizontal-padding);
+  }
+}
