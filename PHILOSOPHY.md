@@ -8,7 +8,7 @@
 
 LimeOS is built on the belief that software should be clear, trustworthy, and built to last. Its philosophy centers on four core virtues: Logic, Integrity, Minimalism, and Endurance. These guide decisions and promote lasting, resilient design. In classical philosophy, a virtue is a quality that shapes action toward a lasting good. In LimeOS, each virtue serves as a compass when making tradeoffs.
 
-> **Important:** This philosophy is replicated across _all_ LimeOS repositories. Any changes made here must also be applied to the `PHILOSOPHY.md` files across other repositories to maintain consistency.
+**Important:** This philosophy is replicated across _all_ LimeOS repositories. Any changes made here must also be applied to the `PHILOSOPHY.md` files across other repositories to maintain consistency.
 
 ### Table of Contents
 
