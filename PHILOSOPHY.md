@@ -1,6 +1,8 @@
 <picture>
+  <!-- The media queries determine the image based on website theme -->
   <source media="(prefers-color-scheme: dark)" srcset=".github/philosophy_banner_white.png">
   <source media="(prefers-color-scheme: light)" srcset=".github/philosophy_banner_black.png">
+  <!-- Fallback to the black variant if no match -->
   <img alt="LimeOS Banner" src=".github/philosophy_banner_black.png">
 </picture>
 
@@ -132,3 +134,5 @@ Fatigue does not choose its direction.
 
   Over time, environments will shift, and with them the system itself. You make careful changes, guided by logic, keep the parts that still carry their weight, and stay close to the purpose that started it. Tiredness may come, but the path stays clear, and endurance stays with it.
 </details>
+
+&nbsp;

@@ -1,12 +1,14 @@
 <picture>
+  <!-- The media queries determine the image based on website theme -->
   <source media="(prefers-color-scheme: dark)" srcset=".github/readme_banner_white.png">
   <source media="(prefers-color-scheme: light)" srcset=".github/readme_banner_black.png">
+  <!-- Fallback to the black variant if no match -->
   <img alt="LimeOS Banner" src=".github/readme_banner_black.png">
 </picture>
 
 ######
 
-This website serves as the primary resource for LimeOS, showcasing the system's functionality and aesthetics, providing access to the latest downloads, a curated selection of extensions, and easy-to-follow guides to get you going.
+This website serves as the primary resource for LimeOS, showcasing the system's functionality and aesthetics, providing access to the latest downloads, a library of components, and easy-to-follow guides to get you going.
 
 ### Philosophy
 
