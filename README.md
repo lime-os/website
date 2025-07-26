@@ -14,10 +14,10 @@ This website serves as the primary resource for LimeOS, showcasing the system's 
 
 This project is guided by a clear and deliberate philosophy. It is built on the belief that software should be understandable, honest, and built to last. Its core is structured around four virtues: Logic, Integrity, Minimalism, and Endurance. Each one provides a foundation for decision-making and long-term design clarity.
 
-For more details, see the `PHILOSOPHY.md` file.
+For more details, see `PHILOSOPHY.md`.
 
 ### License
 
 This project is licensed under the GPL-3.0 License. This license reflects our commitment to ensuring that this software remains free and open-source. We believe in the values of freedom, transparency, and collaboration that the GPL-3.0 promotes, allowing users to freely use, modify, and distribute the software, ensuring that it remains a community-driven project.
 
-For more details, see the `LICENSE.md` file.
+For more details, see `LICENSE.md`.
